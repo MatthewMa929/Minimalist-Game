@@ -1,0 +1,1 @@
+Making a read me so we can just mention problems as they arise to each other in case someone wants to work on the project and no one is responding or something. I don't know, this feels like it might be useful.
