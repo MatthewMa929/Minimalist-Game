@@ -1,29 +1,52 @@
-/// @description Insert description here
-// You can write your code in this editor
+//add rotation speed to the turret
+var _rotate_val = rotation_speed;
+
+//find the direction the turret is rotating
+var _dir = sign(_rotate_val);
+
+//add _rotate_val to the actual image_angle
+while(_rotate_val != 0){
+	//track if we have reached the max angle
+	var reach_max_value = false;
 	
-var tip_location_x = center_x;
-var tip_location_y = center_y;
+	//if we are rotating counter-clock
+	if(_dir > 0){
+		if(image_angle == max_rotation_angle){
+			reach_max_value = true;
+		}
+	}
+	//if we are rotating clock-wise
+	else if(_dir < 0){
+		if(image_angle == -max_rotation_angle){
+			reach_max_value = true
+		}
+	}
 	
-image_angle += rotation_speed;
-
-if image_angle >= 85
-	rotation_speed = -rotation_speed
-if image_angle <= -85
-	rotation_speed = -rotation_speed
-
-
-tip_location_x = x + sprite_width / 2 * abs(cos(image_angle));
-tip_location_y = center_y - sprite_height / 2 * sin(image_angle * pi / 180);
-
-show_debug_message("x and y is " + string(x) + " " + string(center_y))
-show_debug_message("Angle is " + string(image_angle));
-show_debug_message("Sin of Angle is " + string(sin(image_angle * pi / 180)));
-show_debug_message("Change in y is " + string(sprite_height / 2 * sin(image_angle * pi / 180)));
-show_debug_message("Caculated tip y is " + string(tip_location_y));
-show_debug_message(" ");
-
-
-if (keyboard_check_pressed(vk_space))
-{
-	instance_create_depth(tip_location_x, tip_location_y, -100, obj_realbullet);
+	//when we reach max angle, stop roate and change direction
+	if(reach_max_value){
+		//change direction by negate the rotation_speed;
+		rotation_speed = -rotation_speed;
+		//stop this loop
+		_rotate_val = 0;
+	}
+	else{
+		//change actual angle
+		if(_dir > 0){
+			image_angle += 1;
+			_rotate_val -= 1;
+		}
+		else{
+			image_angle -= 1;
+			_rotate_val += 1;
+		}
+	}
 }
+	
+//use space to shoot one bullet
+if(keyboard_check_pressed(vk_space)){
+	var _new_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
+	//set correct direction for the bullet
+	_new_bullet.direction = image_angle;
+	//set correct image_angle for the bullet
+	_new_bullet.image_angle = image_angle;
+}	

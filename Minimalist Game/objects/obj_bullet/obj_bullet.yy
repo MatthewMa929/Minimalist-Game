@@ -9,8 +9,8 @@
   "name":"obj_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Old objects",
-    "path":"folders/Objects/Old objects.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -35,5 +35,5 @@
     "path":"sprites/spr_bullet/spr_bullet.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

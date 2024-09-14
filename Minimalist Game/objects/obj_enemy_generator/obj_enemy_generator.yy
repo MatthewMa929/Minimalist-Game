@@ -1,13 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_turret_new",
-  "eventList":[],
+  "%Name":"obj_enemy_generator",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_turret_new",
+  "name":"obj_enemy_generator",
   "overriddenProperties":[],
   "parent":{
-    "name":"New objects",
-    "path":"folders/Objects/New objects.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
