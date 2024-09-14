@@ -9,8 +9,8 @@
   "name":"obj_turret",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Old objects",
+    "path":"folders/Objects/Old objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

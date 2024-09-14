@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_base",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_turret_new",
+  "eventList":[],
   "managed":true,
-  "name":"obj_base",
+  "name":"obj_turret_new",
   "overriddenProperties":[],
   "parent":{
-    "name":"Old objects",
-    "path":"folders/Objects/Old objects.yy",
+    "name":"New objects",
+    "path":"folders/Objects/New objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,11 +26,8 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
-  "spriteId":{
-    "name":"spr_base",
-    "path":"sprites/spr_base/spr_base.yy",
-  },
+  "solid":false,
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

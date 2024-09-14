@@ -8,8 +8,8 @@
   "name":"obj_realbullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Old objects",
+    "path":"folders/Objects/Old objects.yy",
   },
   "parentObjectId":{
     "name":"obj_bullet",
