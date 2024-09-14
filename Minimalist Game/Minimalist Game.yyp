@@ -34,6 +34,7 @@
   },
   "name":"Minimalist Game",
   "resources":[
+    {"id":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_enemy_spawner","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
@@ -41,6 +42,7 @@
     {"id":{"name":"obj_realenemy","path":"objects/obj_realenemy/obj_realenemy.yy",},},
     {"id":{"name":"obj_turret","path":"objects/obj_turret/obj_turret.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_base","path":"sprites/spr_base/spr_base.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"spr_enemyspawner","path":"sprites/spr_enemyspawner/spr_enemyspawner.yy",},},
