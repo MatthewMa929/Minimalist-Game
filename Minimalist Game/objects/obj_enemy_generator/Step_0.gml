@@ -2,9 +2,10 @@
 spawn_timer --;
 
 //spawn one enemy when timer is reduced to 0
-if(spawn_timer == 0){	
+if(spawn_timer == 0){
+	show_debug_message("spawn!");
 	//generate enemy
-	var _new_enemy = instance_create_layer(room_width + 100, room_height / 2, "Instances", obj_enemy);
+	var _new_enemy = instance_create_layer(room_width + 100, room_height / 2, "Instances", obj_triangle_enemy);
 	
 	//set the spawn loc x for the enemy
 	var _spawn_x = room_width + _new_enemy.sprite_width + 10;
@@ -17,3 +18,4 @@ if(spawn_timer == 0){
 	//reset the timer
 	spawn_timer = spawn_rate;
 }
+
