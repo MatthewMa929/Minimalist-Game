@@ -6,4 +6,4 @@ spawn_timer = spawn_rate;
 
 
 //the vertical offset value for enemy spawn 
-spawn_offset = 40;
+spawn_offset = 70;
