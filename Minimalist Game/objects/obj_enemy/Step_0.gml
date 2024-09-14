@@ -6,7 +6,7 @@ else{
 	speed = 0;
 }
 
-
+//only detect bullet collision when alive
 if(alive && place_meeting(x, y, obj_bullet)){
 	enemy_health -= 1;
 	if(enemy_health <= 0){
@@ -14,6 +14,7 @@ if(alive && place_meeting(x, y, obj_bullet)){
 	}
 }
 
+//set to correct animation when destory
 if(!alive){
 	if(destory_sprite == noone){
 		instance_destroy(id);
