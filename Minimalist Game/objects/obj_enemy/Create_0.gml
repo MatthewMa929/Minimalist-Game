@@ -11,7 +11,7 @@ if instance_exists(obj_turret)
 }
 */
 randomise()
-spd = random_range(1, 4);
+spd = random_range(2, 3);
 
 image_xscale = .75;
 image_yscale = .75;

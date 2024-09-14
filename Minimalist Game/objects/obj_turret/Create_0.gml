@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-rotation_speed = 3;
+rotation_speed = 2.5;
 
 self.x = 200;
 self.y = room_height / 2;

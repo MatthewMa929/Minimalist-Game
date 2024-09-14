@@ -3,5 +3,5 @@
 
 randomise();
 
-timer = 90;
+timer = 120;
 curr_time = timer;

@@ -15,6 +15,7 @@ if image_angle <= -85
 tip_location_x = x + sprite_width / 2 * abs(cos(image_angle));
 tip_location_y = center_y - sprite_height / 2 * sin(image_angle * pi / 180);
 
+
 show_debug_message("x and y is " + string(x) + " " + string(center_y))
 show_debug_message("Angle is " + string(image_angle));
 show_debug_message("Sin of Angle is " + string(sin(image_angle * pi / 180)));
