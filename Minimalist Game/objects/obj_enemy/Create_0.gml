@@ -9,3 +9,6 @@ alive = true;
 
 //set correct particle effect
 destory_sprite = noone;
+
+//in base boolean
+in_base = false;

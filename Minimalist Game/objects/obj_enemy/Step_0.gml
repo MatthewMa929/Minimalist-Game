@@ -24,3 +24,11 @@ if(!alive){
 	}
 }
 
+if(place_meeting(x, y, obj_base)){
+	in_base = true;
+}
+
+if(in_base && x < 0 - sprite_width){
+	global.health_point -=1;
+	instance_destroy(id);
+}
