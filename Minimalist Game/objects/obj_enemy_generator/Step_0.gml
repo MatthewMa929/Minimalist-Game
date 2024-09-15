@@ -3,6 +3,15 @@ spawn_timer --;
 
 //spawn one enemy when timer is reduced to 0
 if(spawn_timer == 0){
+	
+	//new generation of faster enemies
+	num_spawned += 1;
+	
+	if (num_spawned % 10 == 0)
+	{
+		global.enemy_generation += 1;
+	}
+	
 	//randomly choose a enemy to generate
 	var _enemy_type = choose(obj_triangle_enemy, obj_square_enemy);
 	//generate enemy

@@ -4,10 +4,10 @@
 // Inherit the parent event
 event_inherited();
 
-enemy_speed = 2;
+enemy_speed = 1.5 + global.enemy_generation / 10;
 speed = enemy_speed;
 
-enemy_health = 1;
+enemy_health = 2;
 
 destory_sprite = spr_square_destory;
 

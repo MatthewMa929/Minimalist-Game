@@ -12,3 +12,5 @@ destory_sprite = noone;
 
 //in base boolean
 in_base = false;
+
+enemy_generation = 0;

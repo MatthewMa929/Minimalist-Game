@@ -12,7 +12,11 @@ if(alive && place_meeting(x, y, obj_bullet)){
 	if(enemy_health <= 0){
 		alive = false;
 	}
-	audio_play_sound(snd_hit_enemy, 1, false);
+	else
+	{
+		instance_destroy(instance_nearest(x, y, obj_bullet));
+		speed = speed * .3;
+	}
 }
 
 //set to correct animation when destory
@@ -29,7 +33,7 @@ if(place_meeting(x, y, obj_base)){
 	in_base = true;
 }
 
-if(in_base && x < 0 - sprite_width){
+if(in_base && x < obj_base.bbox_right){
 	audio_play_sound(snd_health_reduce, 1, false);
 	global.health_point -=1;
 	instance_destroy(id);
