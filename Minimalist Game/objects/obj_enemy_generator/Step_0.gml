@@ -5,6 +5,12 @@ if spawn_timer > 0 {
 
 //spawn one enemy when timer is reduced to 0
 if(spawn_timer == 0) and start{
+	//num record and generation increment
+	num_spawned += 1;
+	if(num_spawned % 10){
+		global.enemy_generation += 1;
+	}
+	
 	//randomly choose a enemy to generate
 	var _enemy_type = choose(obj_triangle_enemy, obj_square_enemy);
 	//generate enemy
@@ -20,5 +26,12 @@ if(spawn_timer == 0) and start{
 	
 	//reset the timer
 	spawn_timer = spawn_rate;
+}
+
+if(end_game){
+	with(obj_enemy){
+		enemy_health = 0
+		alive = false;
+	}
 }
 

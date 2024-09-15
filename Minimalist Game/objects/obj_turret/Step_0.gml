@@ -5,7 +5,7 @@ var _rotate_val = rotation_speed;
 var _dir = sign(_rotate_val);
 
 //add _rotate_val to the actual image_angle
-while(_rotate_val != 0){
+while(_rotate_val != 0 && !turret_destory){
 	//track if we have reached the max angle
 	var reach_max_value = false;
 	
@@ -43,7 +43,7 @@ while(_rotate_val != 0){
 }
 	
 //use space to shoot one bullet
-if(keyboard_check_pressed(vk_space)){
+if(keyboard_check_pressed(vk_space) && !turret_destory){
 	//get energy bar to calculate if enough energy
 	var _energy_bar = instance_nearest(x, y, obj_energy_bar);
 	if(_energy_bar != noone){
@@ -58,4 +58,14 @@ if(keyboard_check_pressed(vk_space)){
 			_energy_bar.energy -= energy_use;
 		}
 	}
-}	
+}
+
+if(global.health_point <= 0 && !turret_destory){
+	turret_destory = true;
+	audio_play_sound(snd_game_end, 1, false);
+	var _enemy_generator = instance_nearest(x, y, obj_enemy_generator);
+	if(_enemy_generator != noone){
+		_enemy_generator.end_game = true; 
+	}
+	sprite_index = spr_turret_destory;
+}

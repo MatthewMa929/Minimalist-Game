@@ -6,11 +6,16 @@ else{
 	speed = 0;
 }
 
+
 //only detect bullet collision when alive
 if(alive && place_meeting(x, y, obj_bullet)){
 	enemy_health -= 1;
 	if(enemy_health <= 0){
 		alive = false;
+		global.score += 1;
+	}
+	else{
+		speed *= 0.3;
 	}
 	audio_play_sound(snd_hit_enemy, 1, false);
 }

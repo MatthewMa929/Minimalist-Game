@@ -11,3 +11,5 @@ y =room_height / 2;
 //how much energy take to shoot one bullet
 energy_use = 20;
 
+turret_destory = false;
+

@@ -7,5 +7,5 @@ enemy_health = 1;
 
 destory_sprite = spr_square_destory;
 
-image_xscale = 2
-image_yscale = 2
+image_xscale = 1;
+image_yscale = 1;

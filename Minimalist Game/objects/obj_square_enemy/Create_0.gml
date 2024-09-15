@@ -4,8 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-enemy_speed = 2;
-speed = enemy_speed;
+enemy_speed = 1.5 + global.enemy_generation / 10;
 
 enemy_health = 1;
 
