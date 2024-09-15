@@ -7,4 +7,7 @@ max_rotation_angle = 85
 x = 200;
 y =room_height / 2;
 
+//bullet stuff
+//how much energy take to shoot one bullet
+energy_use = 20;
 

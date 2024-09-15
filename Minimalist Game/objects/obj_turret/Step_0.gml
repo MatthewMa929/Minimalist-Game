@@ -44,9 +44,20 @@ while(_rotate_val != 0){
 	
 //use space to shoot one bullet
 if(keyboard_check_pressed(vk_space)){
-	var _new_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
-	//set correct direction for the bullet
-	_new_bullet.direction = image_angle;
-	//set correct image_angle for the bullet
-	_new_bullet.image_angle = image_angle;
+	//get energy bar to calculate if enough energy
+	var _energy_bar = instance_nearest(x, y, obj_energy_bar);
+	if(_energy_bar != noone){
+		//when we have enough energy
+		if(_energy_bar.energy >= energy_use){
+			var _new_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
+			//set correct direction for the bullet
+			_new_bullet.direction = image_angle;
+			//set correct image_angle for the bullet
+			_new_bullet.image_angle = image_angle;
+			_energy_bar.energy -= energy_use;
+		}
+		else{
+		//TODO:Some indication for player to notice
+		}
+	}
 }	

@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_energy_bar",
+  "%Name":"obj_energy",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_energy_bar",
+  "name":"obj_energy",
   "overriddenProperties":[],
   "parent":{
     "name":"energy_bar",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_energy_bar_frame",
-    "path":"sprites/spr_energy_bar_frame/spr_energy_bar_frame.yy",
+    "name":"spr_energy",
+    "path":"sprites/spr_energy/spr_energy.yy",
   },
   "spriteMaskId":null,
   "visible":true,
