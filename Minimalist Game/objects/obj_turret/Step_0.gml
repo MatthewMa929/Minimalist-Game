@@ -56,8 +56,5 @@ if(keyboard_check_pressed(vk_space)){
 			_new_bullet.image_angle = image_angle;
 			_energy_bar.energy -= energy_use;
 		}
-		else{
-		//TODO:Some indication for player to notice
-		}
 	}
 }	

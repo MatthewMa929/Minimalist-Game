@@ -3,7 +3,6 @@ spawn_timer --;
 
 //spawn one enemy when timer is reduced to 0
 if(spawn_timer == 0){
-	show_debug_message("spawn!");
 	//generate enemy
 	var _new_enemy = instance_create_layer(room_width + 100, room_height / 2, "Instances", obj_triangle_enemy);
 	
