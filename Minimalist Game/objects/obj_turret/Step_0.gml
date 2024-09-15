@@ -49,6 +49,7 @@ if(keyboard_check_pressed(vk_space)){
 	if(_energy_bar != noone){
 		//when we have enough energy
 		if(_energy_bar.energy >= energy_use){
+			audio_play_sound(snd_player_shoot, 1, false);
 			var _new_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
 			//set correct direction for the bullet
 			_new_bullet.direction = image_angle;
