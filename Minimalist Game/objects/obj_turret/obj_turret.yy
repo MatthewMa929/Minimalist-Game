@@ -29,10 +29,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"spr_turret",
-    "path":"sprites/spr_turret/spr_turret.yy",
+    "name":"spr_turret_new",
+    "path":"sprites/spr_turret_new/spr_turret_new.yy",
   },
   "spriteMaskId":null,
   "visible":true,
