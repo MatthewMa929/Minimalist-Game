@@ -15,6 +15,7 @@ if(alive && place_meeting(x, y, obj_bullet)){
 	else
 	{
 		instance_destroy(instance_nearest(x, y, obj_bullet));
+		sprite_index = spr_triangle_enemy;
 		speed = speed * .3;
 	}
 }
