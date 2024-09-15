@@ -1,8 +1,10 @@
 //reduce the spawn_timer
-spawn_timer --;
+if spawn_timer > 0 {
+	spawn_timer --;
+}
 
 //spawn one enemy when timer is reduced to 0
-if(spawn_timer == 0){
+if(spawn_timer == 0) and start{
 	//randomly choose a enemy to generate
 	var _enemy_type = choose(obj_triangle_enemy, obj_square_enemy);
 	//generate enemy

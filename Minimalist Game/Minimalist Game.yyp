@@ -46,6 +46,7 @@
     {"id":{"name":"obj_energy_bar","path":"objects/obj_energy_bar/obj_energy_bar.yy",},},
     {"id":{"name":"obj_energy","path":"objects/obj_energy/obj_energy.yy",},},
     {"id":{"name":"obj_square_enemy","path":"objects/obj_square_enemy/obj_square_enemy.yy",},},
+    {"id":{"name":"obj_start_enemy","path":"objects/obj_start_enemy/obj_start_enemy.yy",},},
     {"id":{"name":"obj_triangle_enemy","path":"objects/obj_triangle_enemy/obj_triangle_enemy.yy",},},
     {"id":{"name":"obj_turret","path":"objects/obj_turret/obj_turret.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},

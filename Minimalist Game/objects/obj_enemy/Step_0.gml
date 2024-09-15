@@ -29,7 +29,7 @@ if(place_meeting(x, y, obj_base)){
 	in_base = true;
 }
 
-if(in_base && x < 0 - sprite_width){
+if(in_base && x < obj_base.sprite_width){
 	audio_play_sound(snd_health_reduce, 1, false);
 	global.health_point -=1;
 	instance_destroy(id);
